@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Slider</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body style="padding:50px">
+	<div class="C_poster poster-main" data-setting='{"width": 1100,"hieght": 270,"posterWidth": 800,
+													"height": 286,"scale": 0.8,"speed": 300,
+													"verticleAlign":"middle"}'>
+		<div class="poster-btn poster-prev-btn"></div>
+		<ul class="poster-list">
+			<li class="poster-item"><a href="#"> <img src="imgs/1.jpg" width="100%"></a></li>
+			<li class="poster-item"><a href="#"> <img src="imgs/1.jpg" width="100%"></a></li>
+			<li class="poster-item"><a href="#"> <img src="imgs/1.jpg" width="100%"></a></li>
+			<li class="poster-item"><a href="#"> <img src="imgs/1.jpg" width="100%"></a></li>
+			<li class="poster-item"><a href="#"> <img src="imgs/1.jpg" width="100%"></a></li>
+			<li class="poster-item"><a href="#"> <img src="imgs/1.jpg" width="100%"></a></li>
+			<li class="poster-item"><a href="#"> <img src="imgs/1.jpg" width="100%"></a></li>
+
+
+		</ul>
+
+		<div class="poster-btn poster-next-btn"></div>
+	</div>
+
+
+
+	<script type="text/javascript" src="js/lib/jquery-2.1.4.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script>
+	// 通常实例化单个Carousel的方法
+	// var carousel = new Carousel($(".C_poster"))
+
+	// 优化后 实例化一个或者多个Carousel的方法
+	$(function(){
+		Carousel.init($(".C_poster"));
+	});
+
+	</script>
+	
+</body>
+</html>
